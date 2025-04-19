@@ -1,27 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Home</header>
-    
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li> <!-- lowercase "contact.html" -->
-        </ul>
-    </nav>
-  
-    <h1>Welcome</h1>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <div id="clock"></div>
+        <button id="themeToggle">Switch Theme</button>
+    </header>
 
-    <div class="flex-container">
-        <img src="Images/Image1.jpg" alt="Image 1" class="flex-img"> 
-    </div>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is a demo website for Lab 4 JavaScript features.</p>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3 class="question">What is this website about?</h3>
+                <p class="answer">This is a demo project for learning web development.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="question">How do I contact support?</h3>
+                <p class="answer">Use the contact form on our contact page.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Team Members</h2>
+            <ul id="userList"></ul>
+            <button id="loadUsersBtn">Load Users</button>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
     <script src="script.js" defer></script>
 </body>
 </html>
